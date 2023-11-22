@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About Us</title>
+</head>
+<body>
+  <a href="home.php"><button id="back">Go Back</button></a>
+<div class="wrapper">
+  <h1>Our Team</h1>
+  <p> AgroMart Team provided you three types of Fetilizer that is <br>Biological Fertilizer <br> Organic Fertilizer <br> Chemical Fertilizer<br> also we are provided 2 types of seeds that is <br>Hybrid <br> Natural <br></p>
+  <div class="team">
+    <div class="team_member">
+      <div class="team_img">
+        <img src="darshana.png" alt="Team_image">
+      </div>
+      <h3>Darshana kakulte</h3>
+      <p class="role">Developer,Tester</p>
+      <p>Our team is develop an E-Commerce website for Fetilizer selling bussiness. We are providing best service and information about crops and seeds.</p>
+    </div>
+   
+  </div>
+</div>	
+<style>
+  /* Style Sheet for About Us page */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(about.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  font-family: 'Playfair Display',serif;
+}
+#back{
+  width: 20vh;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  padding: 10px 10px;
+  background: greenyellow;
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  top: 10px;
+  left: 20px ;
+  cursor: pointer;
+}
+
+.wrapper{
+  margin-top: 10%;
+}
+.wrapper h1{
+  font-family: math;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.wrapper p{
+  font-family: math;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align:center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 10px;
+  margin-bottom: 50px;
+  width: 250px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 110px;
+  border-radius: -60%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+</style>
+</body>
+</html>

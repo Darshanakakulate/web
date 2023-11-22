@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a href="home.php"><button id="back">Go Back</button></a>
+        <h1>Contact Us</h1>
+        <p><b> Free to contact us and we will get back to you as soon as we can.</b></p>
+        <form action="mail.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="message">Message</label>
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send">
+        </form>
+     </div>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)),url(bg2.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#back{
+    width: 20vh;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    padding: 10px 10px;
+    background: greenyellow;
+    border: none;
+    border-radius: 30px;
+    position: absolute;
+    top: 10px;
+    left: 20px ;
+    cursor: pointer;
+}
+h1 {
+    font-family: 'Playfair Display',
+        serif;
+    font-size: 59px;
+    color: rgb(18, 17, 17);
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    color: #060606;
+    text-align:center;
+}
+
+p,input,textarea,label {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 5% 5%;
+    border: 5px greenyellow;
+    
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+input, textarea, label {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    color: #0f0e0e;
+}
+
+input,textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #0f0e0e2;
+}
+
+input[type=submit] {
+    background-color: #545557;
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+input[type=submit]:hover {
+    background: #FFF;
+    color: #1b1c1e;
+}
+
+input,
+textarea {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #010800;
+}
+
+a {
+    color: #828282;
+    font-style: italic;
+}
+
+a:hover {
+    color: rgb(14, 13, 13);
+}
+    </style>
+    
+</body>
+</html>
+
+
